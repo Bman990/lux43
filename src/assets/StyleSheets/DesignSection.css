@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+
+.designSectionContainer {
+    height: 100vh;
+    width: 100vw;
+    margin-bottom:5em;
+  }
+  
+  .designSectionContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .leftSideDiv {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .textTitles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60%;
+  }
+  
+  .textLeftHeader {
+    font-size: 2em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .textLeftDesc {
+   font-size: 5em;
+   font-family: 'Lato', sans-serif;
+  }
+  
+  .linkStyle {
+    align-self: flex-start;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    background-color: transparent;
+    padding: 0.5em 0.7em 0.5em 0.7em;
+    border-radius: 50px;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .linkStyle:hover{
+    background-color: black;
+    color: white;
+  }
+
+  .bottomLeftDiv{
+  }
+
+  .bottomLeftText{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em;
+  }
+  
+  .rightSideDiv {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .imgStyleHolder {
+    width: 90%;
+    height: 90%;
+  }
+
