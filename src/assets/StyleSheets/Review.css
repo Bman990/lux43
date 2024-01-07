@@ -5,8 +5,11 @@
     width: 100vw;
     margin-top: 5em;
     margin-bottom: 5em;
+    overflow-y: hidden;
 }
 
 .marqueeStyle{
     width: 100vw;
+    height: max-content;
+    overflow-y: hidden;
 }

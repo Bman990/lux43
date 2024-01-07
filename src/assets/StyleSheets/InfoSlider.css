@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+
+.infoSliderSection{
+    margin-top: 0;
+    margin-bottom: 5em;
+    position: relative;
+    height: max-content;
+    width: 100vw;
+    background-color: rgb(245, 245, 245);
+}
+
+.infoSliderContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.infoSliderContent > h1 {
+    font-size: 2.3em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.infoSliderContent > p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    width: 60%;
+    line-height: 1.3em;
+}
+
+.policyStyle {
+    font-weight: 700;
+}

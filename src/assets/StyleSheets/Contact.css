@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+
+
+.contactSection{
+    margin: 0;
+    background-color: rgb(189, 207, 137);
+    height: max-content;
+}
+
+.contactContent{
+
+}
+
+.contactHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactHeaderText{
+    font-size: 2.3em;
+    font-family: 'Lato', sans-serif;
+}
+
+.formWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.formContainer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.labelStyle{
+    font-family: 'Lato', sans-serif;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.inputStyle{
+    font-family: 'Lato', sans-serif;
+    font-size: 0.7em;
+    border: none;
+    outline: none;
+    margin-top: 0.5em;
+}
+
+.textAreaStyle{
+    font-family: 'Lato', sans-serif;
+    font-size: 0.7em;
+    border: none;
+    outline: none;
+    width: 100%;
+    resize: none;
+}
+
+.submitBtn{
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    background-color: transparent;
+    padding: 0.5em 0.7em 0.5em 0.7em;
+    border-radius: 50px;
+    border: 1px solid black;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 2em;
+}
+
+.submitBtn:hover{
+    background-color: black;
+    color: white;
+}

@@ -12,6 +12,7 @@ export const Projects: React.FC = () => {
             <div className="projectContent">
 
             <DesignSection 
+            className2=''
             colorStyle='#d9e2e7'
             designName='Kitchen Design'
             designDesc='Every meal will feel like a retreat'
@@ -22,6 +23,7 @@ export const Projects: React.FC = () => {
             />
 
             <DesignSection 
+            className2='bathroomSec'
             colorStyle='#FFED9C'
             designName='Bathroom Design'
             designDesc='Your sanctuary of comfort'
@@ -32,6 +34,7 @@ export const Projects: React.FC = () => {
             />
 
             <DesignSection 
+            className2='bedroomSec'
             colorStyle='#D9D7BA'
             designName='Bedroom Design'
             designDesc='Restful nights to your liking'
@@ -42,6 +45,7 @@ export const Projects: React.FC = () => {
             />
 
             <DesignSection 
+            className2='livingRoomSec'
             colorStyle='#FFAF74'
             designName='Living Room Design'
             designDesc='Live in comfort and style to your taste'
@@ -51,8 +55,9 @@ export const Projects: React.FC = () => {
             designImage={livingRoomPic}
             />
 
-            <DesignSection 
-            colorStyle='#D9D7BA'
+            <DesignSection
+            className2='patioSec' 
+            colorStyle='#e2abae'
             designName='Patio Design'
             designDesc='Kick back in style with your patio'
             linkTo='/lux43/patio'
