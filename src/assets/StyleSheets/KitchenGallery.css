@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.kitchenGalleryContainer{
+    background-color: rgb(241, 241, 241);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiperDiv{
+    width: 85%;
+    height: 85%;
+    border-radius: 10px;
+}
+
+.swiperSlideStyleK1{
+    background-image: url('/kitchenImg1.jpg');
+    background-position: center;
+
+}
+
+.swiperSlideStyleK2{
+    background-image: url('/kitchenImg2.jpg');
+    background-position: center;
+}
+
+.swiperSlideStyleK3{
+    background-image: url('/kitchenImg3.jpg');
+    background-position: center;
+}
+
+.swiperSlideStyleK4{
+    background-image: url('/kitchenImg4.jpg');
+    background-position: center;
+}
+
+.swiperSlideStyleK5{
+    background-image: url('/kitchenImg5.jpg');
+    background-position: center;
+}
+
+
+.swiper-button-next::after, .swiper-button-prev::after {
+    color: black;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    cursor: pointer;
+}
+
+.textDescDiv {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textDescDiv > p {
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    font-size: 2em;
+    margin-top: 1%;
+    margin-left: 2%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.textDescDiv > p:last-of-type {
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    font-size: 1.5em;
+    margin-bottom: 1%;
+    margin-right: 4%;
+    font-family: 'Lato', sans-serif;
+}
+
+.linkDiv{
+    width: max-content;
+    position: relative;
+    right: 40%;
+    bottom: 3.5%;
+}
+
+.linkStyle2 {
+    padding: 0.5em 0.7em 0.5em 0.7em;
+    background-color: transparent;
+    border: none;
+    font-size: 1em;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    color: black;
+}
+
+.linkStyle2:hover{
+    cursor: pointer;
+    color: rgb(94, 94, 94);
+    background-color: transparent;
+}
+
+

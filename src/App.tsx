@@ -17,7 +17,7 @@ function App() {
         <Route path="/lux43/" element={<Home />} />
         <Route path="/lux43/kitchen" element={<KitchenGallery />} />
         <Route path="/lux43/bathroom" element={<BathroomGallery />} />
-        <Route path="/lux43/patito" element={<PatioGallery />} />
+        <Route path="/lux43/patio" element={<PatioGallery />} />
         <Route path="/lux43/livingroom" element={<LivingRoomGallery />} />
         <Route path="/lux43/bedroom" element={<BedroomGallery />} />
       </Routes>
