@@ -1,15 +1,25 @@
 
 
-
-.reviewSection{
+/* General styles for all screen sizes */
+.reviewSection {
     width: 100vw;
     margin-top: 5em;
     margin-bottom: 5em;
     overflow-y: hidden;
 }
 
-.marqueeStyle{
+.marqueeStyle {
     width: 100vw;
     height: max-content;
     overflow-y: hidden;
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+    .reviewSection,
+    .marqueeStyle {
+        width: 100%; /* Adjust width for smaller screens */
+    }
+
+    /* Adjust other styles as needed for smaller screens */
 }

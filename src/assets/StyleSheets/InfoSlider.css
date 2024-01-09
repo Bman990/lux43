@@ -35,3 +35,15 @@
 .policyStyle {
     font-weight: 700;
 }
+
+@media screen and (max-width: 768px) {
+    .infoSliderContent > h1{
+        font-size: 1.9em;
+        text-align: center;
+    }
+
+    .infoSliderContent > p {
+        text-align: center;
+    }
+
+}

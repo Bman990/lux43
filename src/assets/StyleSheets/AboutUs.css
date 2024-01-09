@@ -71,4 +71,28 @@
   .infoPicStyle {
     width: 100%;
     height: 80%;
+  } 
+
+
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+  .aboutUsInfoContent{
+    display: flex;
+    flex-direction: column-reverse;
   }
+
+  .headerTitle{
+    text-align: center;
+  }
+
+  .infoPictureDiv{
+    width: 100%;
+  }
+
+  .infoTextDiv{
+    width: 100%;
+  }
+  .infoText{
+    font-size: 1.2em;
+  }
+}

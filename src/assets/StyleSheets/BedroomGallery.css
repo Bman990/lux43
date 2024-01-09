@@ -108,3 +108,44 @@
     background-color: transparent;
 }
 
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .linkDiv{
+        right: 39% !important;
+        bottom: 0 !important;
+        margin-bottom: 0.5em;
+    }
+    .swiperDiv {
+        width: 100%; /* Adjust width for smaller screens */
+        height: 100%;
+    }
+
+    .swiperSlideStyleBR1,
+    .swiperSlideStyleBR2,
+    .swiperSlideStyleBR3,
+    .swiperSlideStyleBR4,
+    .swiperSlideStyleBR5 {
+        background-size: contain; 
+        background-repeat: no-repeat;
+        /* Adjust background image size for smaller screens */
+    }
+
+    .textDescDiv{
+        color: black;
+    }
+
+    .textDescDiv > p,
+    .textDescDiv > p:last-of-type {
+        color: black !important; /* Change the text color to black for mobile screens */
+    }
+
+    .linkDiv {
+        right: 10%; /* Adjust position for smaller screens */
+        bottom: 1%; /* Adjust position for smaller screens */
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after{
+        font-size: 1.2em !important;
+    }
+}

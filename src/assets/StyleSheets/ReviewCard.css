@@ -1,38 +1,56 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-
+/* General styles for all screen sizes */
 .reviewCardContainer {
-   background-color: rgb(245, 245, 245);
-   border: 1px solid black;
-   padding: 0.6em 3em 0.6em 3em;
-   margin-right: 6em;
-   transition: background-color 0.3s;
-   height: max-content;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid black;
+    padding: 0.6em 3em 0.6em 3em;
+    margin-right: 6em;
+    transition: background-color 0.3s;
+    height: max-content;
+}
 
-  }
-  
-  .reviewTextDiv {
-
-  }
-
-  .reviewText {
+.reviewText {
     font-size: 2em;
     font-family: 'Lato', sans-serif;
-  }
-  
-  .reviewSource {
+}
+
+.reviewSource {
     display: flex;
     width: 100%;
     justify-content: flex-end;
     letter-spacing: 0.1em;
     font-size: 1.1em;
     font-family: 'Lato', sans-serif;
-    font-size: 300;
-  }
+    font-weight: 300; /* Fix: Correct the property name to 'font-weight' */
+}
 
-  .reviewCardContainer:hover{
+.reviewCardContainer:hover {
     transform: scale(1.1);
     background-color: rgb(252, 252, 252);
     border: none;
-  }
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+  .reviewText {
+    font-size: 1em;
+    font-family: 'Lato', sans-serif;
+}
+
+.reviewSource {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    letter-spacing: 0.1em;
+    font-size: 0.8em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300; /* Fix: Correct the property name to 'font-weight' */
+}
+
+
+    /* Adjust other styles as needed for smaller screens */
+}

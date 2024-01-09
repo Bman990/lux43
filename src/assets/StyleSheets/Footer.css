@@ -99,3 +99,20 @@
     font-family: 'Lato', sans-serif;
     font-weight: 700;
 }
+
+@media screen and (max-width: 768px) {
+    .footerContent{
+        display: flex;
+        justify-content: space-between;
+        width:100%
+    }
+
+    .contactFooterDiv{
+        margin-left: 1em;
+    }
+
+    .followUsFooterDiv{
+        margin-right: 1em;
+    }
+
+}

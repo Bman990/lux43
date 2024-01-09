@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-
+/* General styles for all screen sizes */
 .heroContainer {
     background-image: url('/interiorHomeBG.jpg');
     height: 97vh;
@@ -14,7 +14,7 @@
     width: 100%;
     height: 100%;
 }
-  
+
 .textDiv {
     margin: 0;
     width: 100%;
@@ -24,16 +24,30 @@
     justify-content: center;
     align-items: center;
 }
-  
+
 .textName {
     margin: 0;
     font-size: 6.5em;
     font-family: 'Lato', sans-serif;
-    font-size: 700;
+    font-weight: 700; /* Fix: Correct the property name to 'font-weight' */
 }
-  
+
 .textSlogan {
     margin: 0;
     font-size: 3.5em;
     font-family: 'Lato', sans-serif;
 }
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+    .textName {
+        font-size: 4.5em; /* Adjust font size for smaller screens */
+    }
+
+    .textSlogan {
+        text-align: center;
+        font-size: 2.5em; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Add more media queries as needed for other screen sizes */

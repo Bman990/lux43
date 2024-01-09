@@ -13,7 +13,7 @@ export const Hero: React.FC = () => {
   };
 
   return (
-    <section className="heroContainer">
+    <section className="heroContainer" id="home">
       <div className="heroContent">
         <motion.div
           variants={containerVariants}
