@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import '../StyleSheets/Contact.css';
+import { Footer } from './Footer';
+import { Link } from 'react-router-dom';
+import { ArrowLeftSvg } from './ArrowLeftSvg';
 
 interface FormData {
   name: string;
@@ -18,22 +20,14 @@ export const Contact: React.FC = () => {
     otherDetails: '',
   });
 
-  const controls = useAnimation();
   const [ref, inView] = useInView({
     triggerOnce: true,
     rootMargin: '-50px 0px', // Adjust this value to change the trigger point
   });
 
   useEffect(() => {
-    if (inView) {
-      controls.start('visible');
-    }
-  }, [controls, inView]);
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { duration: 1 } },
-  };
+    // You can add any logic here if needed
+  }, [inView]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -55,17 +49,22 @@ export const Contact: React.FC = () => {
   };
 
   return (
-    <motion.section
+    <section
       ref={ref}
-      variants={containerVariants}
-      initial="hidden"
-      animate={controls}
       className="contactSection"
     >
       <div className="contactContent">
 
+        <div className='backHomeDiv'>
+          <Link to='/lux43/' className='linkStyle3'><ArrowLeftSvg /><p className='backHomeText'>Back home</p></Link>
+        </div>
+
+        <div className='pictureHeader'>
+          <h1 className='pictureHeaderText'>Start Your Journey With Us</h1>
+        </div>
+
         <div className="contactHeader">
-          <h1 className="contactHeaderText">Start Your Journey With Us</h1>
+          <h2 className="contactHeaderText">Fill out the form below</h2>
         </div>
 
         <div className='formWrapper'>
@@ -107,6 +106,8 @@ export const Contact: React.FC = () => {
           </form>
         </div>
       </div>
-    </motion.section>
+
+      <Footer />
+    </section>
   );
 };

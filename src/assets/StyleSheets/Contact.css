@@ -7,12 +7,27 @@
 
 .contactSection{
     margin: 0;
-    background-color: rgb(189, 207, 137);
+    background-color: rgb(245, 245, 245);
     height: max-content;
 }
 
 .contactContent{
+    margin-bottom: 5em;
+}
 
+.pictureHeader{
+    background-image: url('/contactHeadPic.jpg');
+    background-position: center;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pictureHeaderText{
+    font-size: 5em;
+    font-family: 'Lato', sans-serif;
 }
 
 .contactHeader{
@@ -51,7 +66,7 @@
 .inputStyle{
     font-family: 'Lato', sans-serif;
     font-size: 0.7em;
-    border: none;
+    border: solid 1px black;
     outline: none;
     margin-top: 0.5em;
 }
@@ -59,7 +74,7 @@
 .textAreaStyle{
     font-family: 'Lato', sans-serif;
     font-size: 0.7em;
-    border: none;
+    border: solid 1px black;
     outline: none;
     width: 100%;
     resize: none;
@@ -80,4 +95,33 @@
 .submitBtn:hover{
     background-color: black;
     color: white;
+    cursor: pointer;
+}
+
+.backHomeDiv {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    display: flex;
+    align-items: center;
+}
+
+.linkStyle3 {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.backHomeText{
+    color: black;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    margin-left: 0.5em;
+}
+
+.arrowLeftSvg{
+    width: 1em;
+    height: 1em;
+    fill: black;
 }

@@ -29,7 +29,7 @@ export const AboutUs: React.FC = () => {
   };
 
   return (
-    <section className="aboutUsContainer">
+    <section className="aboutUsContainer" id="about-us">
       <div className="aboutUsContent" ref={ref}>
         <motion.div
           variants={containerVariants}

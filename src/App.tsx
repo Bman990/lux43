@@ -7,6 +7,7 @@ import { LivingRoomGallery } from './assets/Components/LivingRoomGallery'
 import { BathroomGallery } from './assets/Components/BathroomGallery'
 import { PatioGallery } from './assets/Components/PatioGallery'
 import { BedroomGallery } from './assets/Components/BedroomGallery'
+import { Contact } from './assets/Components/Contact'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
     <>
       <Routes>
         <Route path="/lux43/" element={<Home />} />
+        <Route path="/lux43/contact" element={<Contact />} />
         <Route path="/lux43/kitchen" element={<KitchenGallery />} />
         <Route path="/lux43/bathroom" element={<BathroomGallery />} />
         <Route path="/lux43/patio" element={<PatioGallery />} />

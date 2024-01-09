@@ -8,7 +8,7 @@ import patioPic from '/patioHolder.jpg'
 
 export const Projects: React.FC = () => {
     return(
-        <section className="projectContainer">
+        <section className="projectContainer" id="projects">
             <div className="projectContent">
 
             <DesignSection 
