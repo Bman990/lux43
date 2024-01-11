@@ -125,3 +125,136 @@
     height: 1em;
     fill: black;
 }
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .pictureHeader {
+        width: 100vw;
+        background-repeat: no-repeat;
+    }
+    .pictureHeaderText {
+        font-size: 3em;
+        text-align: center;
+    }
+
+    /* Additional styles for smaller screens */
+    .contactHeaderText {
+        font-size: 1.8em;
+    }
+
+    .pictureHeaderText{
+        text-align: center;
+    }
+
+    .labelStyle {
+        font-size: 1.5em;
+        margin-bottom: 1.5em;
+    }
+
+    .inputStyle,
+    .textAreaStyle {
+        font-size: 0.9em;
+    }
+
+    .submitBtn {
+        font-size: 1.1em;
+        margin-bottom: 1.5em;
+    }
+
+    .backHomeText {
+        font-size: 0.8em;
+    }
+}
+
+/* Media queries for landscape orientation */
+@media screen and (orientation: landscape) {
+    .pictureHeaderText {
+        font-size: 4em;
+        text-align: center
+    }
+
+    .contactHeaderText {
+        font-size: 2em;
+    }
+
+    .labelStyle {
+        font-size: 1.8em;
+        margin-bottom: 1.5em;
+    }
+
+    .inputStyle,
+    .textAreaStyle {
+        font-size: 0.9em;
+    }
+
+    .submitBtn {
+        font-size: 1.1em;
+        margin-bottom: 1.5em;
+    }
+
+    .backHomeText {
+        font-size: 0.9em;
+    }
+}
+
+/* Media queries for iPad screens */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .pictureHeaderText {
+        font-size: 4.5em;
+        text-align: center
+    }
+
+    .contactHeaderText {
+        font-size: 2.2em;
+    }
+
+    .labelStyle {
+        font-size: 2em;
+        margin-bottom: 2em;
+    }
+
+    .inputStyle,
+    .textAreaStyle {
+        font-size: 1em;
+    }
+
+    .submitBtn {
+        font-size: 1.2em;
+        margin-bottom: 2em;
+    }
+
+    .backHomeText {
+        font-size: 1em;
+    }
+}
+
+/* Media queries for Nest Hub screens */
+@media screen and (min-device-width: 480px) and (max-device-width: 1280px) and (-webkit-device-pixel-ratio: 2) {
+    .pictureHeaderText {
+        font-size: 4.5em;
+        text-align: center
+    }
+
+    .contactHeaderText {
+        font-size: 2.2em;
+    }
+
+    .labelStyle {
+        font-size: 2em;
+        margin-bottom: 2em;
+    }
+
+    .inputStyle,
+    .textAreaStyle {
+        font-size: 1em;
+    }
+
+    .submitBtn {
+        font-size: 1.2em;
+        margin-bottom: 2em;
+    }
+
+    .backHomeText {
+        font-size: 1em;
+    }
+}

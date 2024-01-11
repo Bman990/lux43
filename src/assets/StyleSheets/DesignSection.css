@@ -13,9 +13,10 @@
   
   .designSectionContent {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: max-content;
+    height: 100%;
     width: 100%;
   }
   
@@ -86,53 +87,291 @@
     height: 90%;
   }
 
-/* Media queries for responsiveness */
-@media screen and (max-width: 768px) {
-  .designSectionContent{
-    display: flex;
-    flex-direction: column-reverse;
-  }
 
-  .leftSideDiv {
-      width: 100%;
-  }
+/* Extra small devices (phones) */
+@media only screen and (max-width: 575px) {
+    .designSectionContainer{
+        height: max-content;
+    }
+    .designSectionContent{
+        flex-direction: column-reverse;
+        height: max-content;
+        overflow: auto;
+    }
 
-  .textLeftHeader {
-      font-size: 1.5em;
-  }
+    .leftSideDiv{
+        width: 100%;
+    }
 
-  .textLeftDesc {
-      font-size: 3em;
-  }
+    .textLeftHeader{
+        font-size: 1em;
+    }
 
-  .linkStyle {
-      font-size: 0.8em;
-  }
+    .textLeftDesc{
+        font-size: 1em;
+    }
 
-  .bottomLeftText {
-      font-size: 1.2em;
-  }
+    .bottomLeftDiv{
+        margin-top: 2em;
+    }
 
-  .rightSideDiv {
-      width: 100%;
-  }
+    .bottomLeftText{
+        font-size: 1em;
+    }
 
-  .imgStyleHolder {
-      width: 100%;
-      height: auto;
-  }
 }
 
-@media screen and (max-width: 480px) {
-  .textLeftDesc {
-      font-size: 2.5em;
-  }
+/* Small devices (phones) */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .designSectionContent{
+        flex-direction: column-reverse;
+    }
+}
 
-  .linkStyle {
-      font-size: 0.7em;
-  }
+/* Medium devices (tablets) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .designSectionContent{
+        .designSectionContainer{
+            height: max-content;
+        }
+        .designSectionContent{
+            flex-direction: column-reverse;
+            height: max-content;
+            overflow: auto;
+        }
+    
+        .leftSideDiv{
+            width: 100%;
+        }
+    
+        .textLeftHeader{
+            font-size: 1em;
+        }
+    
+        .textLeftDesc{
+            font-size: 1em;
+        }
+    
+        .bottomLeftDiv{
+            margin-top: 2em;
+        }
+    
+        .bottomLeftText{
+            font-size: 1em;
+        }
+    }
+}
 
-  .bottomLeftText {
-      font-size: 1em;
-  }
+/* Large devices (laptops/desktops) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /* Your styles for large devices go here */
+}
+
+/* Extra large devices (large desktops) */
+@media only screen and (min-width: 1200px) {
+    /* Your styles for extra large devices go here */
+}
+
+/* iPhone 5/SE */
+@media only screen and (min-width: 320px) and (max-width: 568px) {
+    .designSectionContainer{
+        height: max-content;
+    }
+    .designSectionContent{
+        flex-direction: column-reverse;
+        height: max-content;
+        overflow: auto;
+    }
+
+    .leftSideDiv{
+        width: 100%;
+    }
+
+    .textLeftHeader{
+        font-size: 1em;
+    }
+
+    .textLeftDesc{
+        font-size: 1em;
+    }
+
+    .bottomLeftDiv{
+        margin-top: 2em;
+    }
+
+    .bottomLeftText{
+        font-size: 1em;
+    }
+}
+
+/* iPhone 6/7/8 */
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+    .designSectionContainer{
+        height: max-content;
+    }
+    .designSectionContent{
+        flex-direction: column-reverse;
+        height: max-content;
+        overflow: auto;
+    }
+
+    .leftSideDiv{
+        width: 100%;
+    }
+
+    .textLeftHeader{
+        font-size: 1em;
+    }
+
+    .textLeftDesc{
+        font-size: 1em;
+    }
+
+    .bottomLeftDiv{
+        margin-top: 2em;
+    }
+
+    .bottomLeftText{
+        font-size: 1em;
+    }
+}
+
+/* iPhone 6/7/8 Plus */
+@media only screen and (min-width: 414px) and (max-width: 736px) {
+    .designSectionContainer{
+        height: max-content;
+    }
+    .designSectionContent{
+        flex-direction: column-reverse;
+        height: max-content;
+        overflow: auto;
+    }
+
+    .leftSideDiv{
+        width: 100%;
+    }
+
+    .textLeftHeader{
+        font-size: 1em;
+    }
+
+    .textLeftDesc{
+        font-size: 1em;
+    }
+
+    .bottomLeftDiv{
+        margin-top: 2em;
+    }
+
+    .bottomLeftText{
+        font-size: 1em;
+    }
+}
+
+/* iPhone X */
+@media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: portrait) {
+    .designSectionContainer{
+        height: max-content;
+    }
+    .designSectionContent{
+        flex-direction: column-reverse;
+        height: max-content;
+        overflow: auto;
+    }
+
+    .leftSideDiv{
+        width: 100%;
+    }
+
+    .textLeftHeader{
+        font-size: 1em;
+    }
+
+    .textLeftDesc{
+        font-size: 1em;
+    }
+
+    .bottomLeftDiv{
+        margin-top: 2em;
+    }
+
+    .bottomLeftText{
+        font-size: 1em;
+    }
+}
+
+/* iPad */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .designSectionContainer{
+        height: max-content;
+    }
+    .designSectionContent{
+        flex-direction: column-reverse;
+        height: max-content;
+        overflow: auto;
+    }
+
+    .leftSideDiv{
+        width: 100%;
+    }
+
+    .textLeftHeader{
+        font-size: 1em;
+    }
+
+    .textLeftDesc{
+        font-size: 1em;
+    }
+
+    .bottomLeftDiv{
+        margin-top: 2em;
+    }
+
+    .bottomLeftText{
+        font-size: 1em;
+    }
+}
+
+/* iPad Pro */
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+    .designSectionContainer{
+        height:max-content;
+    }
+    .designSectionContent{
+        flex-direction: column-reverse;
+        height: max-content;
+        overflow: auto;
+    }
+
+    .leftSideDiv{
+        width: 100%;
+    }
+
+    .textLeftHeader{
+        font-size: 1em;
+    }
+
+    .textLeftDesc{
+        font-size: 1em;
+    }
+
+    .bottomLeftDiv{
+        margin-top: 2em;
+    }
+
+    .bottomLeftText{
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: landscape){
+    .designSectionContainer{
+       position: relative;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .designSectionContainer{
+        position: relative;
+     }
 }

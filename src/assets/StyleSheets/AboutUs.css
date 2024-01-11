@@ -73,6 +73,476 @@
     height: 80%;
   } 
 
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .designSectionContent {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .leftSideDiv {
+    width: 100%;
+  }
+
+  .textLeftHeader {
+    font-size: 1.5em;
+  }
+
+  .textLeftDesc {
+    font-size: 3em;
+  }
+
+  .linkStyle {
+    font-size: 0.8em;
+  }
+
+  .bottomLeftText {
+    font-size: 1.2em;
+  }
+
+  .rightSideDiv {
+    width: 100%;
+  }
+
+  .imgStyleHolder {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .designSectionContainer {
+    height: 100vh;
+  }
+
+  .designSectionContent {
+    flex-direction: column-reverse;
+    height: 100vh; /* Adjusted height to 100vh */
+    overflow: auto; /* Added overflow property to enable scrolling */
+  }
+
+  .leftSideDiv {
+    width: 35%;
+  }
+
+  .textLeftHeader {
+    font-size: 1em;
+  }
+
+  .textLeftDesc {
+    font-size: 1em;
+  }
+
+  .linkStyle {
+    font-size: 1em;
+  }
+
+  .bottomLeftText {
+    font-size: 0.8em;
+  }
+
+  .rightSideDiv {
+    width: 65%;
+  }
+
+  .imgStyleHolder {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .designSectionContainer {
+    height: 100vh;
+  }
+
+  .designSectionContent {
+    flex-direction: column-reverse;
+    height: 100vh; /* Adjusted height to 100vh */
+    overflow: auto; /* Added overflow property to enable scrolling */
+  }
+
+  .leftSideDiv {
+    width: 35%;
+  }
+
+  .textLeftHeader {
+    font-size: 1em;
+  }
+
+  .textLeftDesc {
+    font-size: 1em;
+  }
+
+  .linkStyle {
+    font-size: 1em;
+  }
+
+  .bottomLeftText {
+    font-size: 0.8em;
+  }
+
+  .rightSideDiv {
+    width: 65%;
+  }
+
+  .imgStyleHolder {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Media queries for iPad landscape and portrait */
+@media screen and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+  .designSectionContent {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .leftSideDiv {
+    width: 100%;
+  }
+
+  .textLeftHeader {
+    font-size: 1.5em;
+  }
+
+  .textLeftDesc {
+    font-size: 3em;
+  }
+
+  .linkStyle {
+    font-size: 0.8em;
+  }
+
+  .bottomLeftText {
+    font-size: 1.2em;
+  }
+
+  .rightSideDiv {
+    width: 100%;
+  }
+
+  .imgStyleHolder {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Styles for iPad portrait */
+@media screen and (device-width: 1024px) and (device-height: 768px) and (orientation: landscape) {
+  .designSectionContainer {
+    height: min-content; /* Use min-content instead of max-content */
+  }
+
+  .designSectionContent {
+    display: flex;
+    height: 100%; /* Adjusted height to 100% */
+    flex-direction: column-reverse;
+  }
+
+  .leftSideDiv {
+    width: 60%;
+  }
+
+  .textLeftHeader {
+    font-size: 1.5em;
+  }
+
+  .textLeftDesc {
+    font-size: 3em;
+  }
+
+  .linkStyle {
+    font-size: 0.8em;
+  }
+
+  .bottomLeftText {
+    font-size: 1.2em;
+  }
+
+  .rightSideDiv {
+    width: 50%;
+  }
+
+  .imgStyleHolder {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Media queries for iPad Pro landscape and portrait */
+@media screen and (device-width: 1024px) and (device-height: 1366px) and (orientation: portrait) {
+  .designSectionContent {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .leftSideDiv {
+    width: 100%;
+  }
+
+  .textLeftHeader {
+    font-size: 2em;
+  }
+
+  .textLeftDesc {
+    font-size: 3em;
+  }
+
+  .linkStyle {
+    font-size: 1.5em;
+  }
+
+  .bottomLeftText {
+    font-size: 2em;
+  }
+
+  .rightSideDiv {
+    width: 100%;
+  }
+
+  .imgStyleHolder {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (device-width: 1366px) and (device-height: 1024px) and (orientation: landscape) {
+  .designSectionContent {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .leftSideDiv {
+    width: 100%;
+  }
+
+  .textLeftHeader {
+    font-size: 3em;
+  }
+
+  .textLeftDesc {
+    font-size: 3em;
+  }
+
+  .linkStyle {
+    font-size: 1.2em;
+  }
+
+  .bottomLeftText {
+    font-size: 1.7em;
+  }
+
+  .rightSideDiv {
+    width: 50%;
+  }
+
+  .imgStyleHolder {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Media queries for Nest Hub and Nest Hub Max */
+@media screen and (device-width: 1024px) and (device-height: 600px) {
+  .aboutUsInfoContent {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .headerTitle {
+    text-align: center;
+  }
+
+  .infoPictureDiv {
+    width: 100%;
+  }
+
+  .infoTextDiv {
+    width: 100%;
+  }
+
+  .infoText {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (device-width: 1280px) and (device-height: 800px) {
+  .aboutUsInfoContent {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .headerTitle {
+    text-align: center;
+  }
+
+  .infoPictureDiv {
+    width: 100%;
+  }
+
+  .infoTextDiv {
+    width: 100%;
+  }
+
+  .infoText {
+    font-size: 1.2em;
+  }
+}
+
+
+
+/* Media queries for iPad Mini landscape and portrait */
+@media screen and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+  .designSectionContent {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .leftSideDiv {
+    width: 100%;
+  }
+
+  .textLeftHeader {
+    font-size: 1.5em;
+  }
+
+  .textLeftDesc {
+    font-size: 3em;
+  }
+
+  .linkStyle {
+    font-size: 0.8em;
+  }
+
+  .bottomLeftText {
+    font-size: 1.2em;
+  }
+
+  .rightSideDiv {
+    width: 100%;
+  }
+
+  .imgStyleHolder {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
+  .designSectionContent {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .leftSideDiv {
+    width: 100%;
+  }
+
+  .textLeftHeader {
+    font-size: 1.5em;
+  }
+
+  .textLeftDesc {
+    font-size: 3em;
+  }
+
+  .linkStyle {
+    font-size: 0.8em;
+  }
+
+  .bottomLeftText {
+    font-size: 1.2em;
+  }
+
+  .rightSideDiv {
+    width: 100%;
+  }
+
+  .imgStyleHolder {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Media queries for iPad Air landscape and portrait */
+@media screen and (device-width: 820px) and (device-height: 1180px) and (orientation: portrait) {
+  .designSectionContent {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .leftSideDiv {
+    width: 100%;
+  }
+
+  .textLeftHeader {
+    font-size: 1.5em;
+  }
+
+  .textLeftDesc {
+    font-size: 3em;
+  }
+
+  .linkStyle {
+    font-size: 0.8em;
+  }
+
+  .bottomLeftText {
+    font-size: 1.2em;
+  }
+
+  .rightSideDiv {
+    width: 100%;
+  }
+
+  .imgStyleHolder {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (device-width: 1180px) and (device-height: 820px) and (orientation: landscape) {
+  .designSectionContainer {
+    height: min-content; /* Use min-content instead of max-content */
+  }
+
+  .designSectionContent {
+    display: flex;
+    height: 100%; /* Adjusted height to 100% */
+    flex-direction: column-reverse;
+  }
+
+  .leftSideDiv {
+    width: 100%;
+  }
+
+  .textLeftHeader {
+    font-size: 1.5em;
+  }
+
+  .textLeftDesc {
+    font-size: 3em;
+  }
+
+  .linkStyle {
+    font-size: 0.8em;
+  }
+
+  .bottomLeftText {
+    font-size: 1.2em;
+  }
+
+  .rightSideDiv {
+    width: 50%;
+  }
+
+  .imgStyleHolder {
+    width: 100%;
+    height: auto;
+  }
+}
 
 /* Media query for responsive design */
 @media screen and (max-width: 768px) {
@@ -96,3 +566,26 @@
     font-size: 1.2em;
   }
 }
+
+@media only screen and (max-device-width: 932px) and (orientation: landscape) {
+  .aboutUsInfoContent{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .headerTitle{
+    text-align: center;
+  }
+
+  .infoPictureDiv{
+    width: 100%;
+  }
+
+  .infoTextDiv{
+    width: 100%;
+  }
+  .infoText{
+    font-size: 1.2em;
+  }
+}
+
