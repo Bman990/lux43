@@ -13,7 +13,7 @@ export const KitchenGallery: React.FC = () => {
     return (
     <div className='kitchenGalleryContainer'>
 
-    <div className='linkDiv'><Link to='/lux43/' className='linkStyle2'>Back home</Link></div>
+    <div className='linkDiv'><Link to='/' className='linkStyle2'>Back home</Link></div>
 
     <Swiper
     className='swiperDiv'
