@@ -15,13 +15,13 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/lux43/" element={<Home />} />
-        <Route path="/lux43/contact" element={<Contact />} />
-        <Route path="/lux43/kitchen" element={<KitchenGallery />} />
-        <Route path="/lux43/bathroom" element={<BathroomGallery />} />
-        <Route path="/lux43/patio" element={<PatioGallery />} />
-        <Route path="/lux43/livingroom" element={<LivingRoomGallery />} />
-        <Route path="/lux43/bedroom" element={<BedroomGallery />} />
+        <Route path="/" element={<Home />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="kitchen" element={<KitchenGallery />} />
+        <Route path="bathroom" element={<BathroomGallery />} />
+        <Route path="patio" element={<PatioGallery />} />
+        <Route path="livingroom" element={<LivingRoomGallery />} />
+        <Route path="bedroom" element={<BedroomGallery />} />
       </Routes>
     </>
   )
