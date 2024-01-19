@@ -112,7 +112,7 @@
   @media only screen 
     and (min-device-width: 834px) 
     and (max-device-width: 1112px) 
-    and (orientation: portrait) 
+    and (orientation: portrait)
     and (-webkit-device-pixel-ratio: 2) {
        .heroBtn{
          margin-top: 2.5em;
