@@ -85,44 +85,10 @@
   color: white;
 }
 
-.heroBtn {
-  display: none;
-  font-family: 'Lato', sans-serif;
-  font-size: 1em;
-  width: max-content;
-  background-color: transparent;
-  border: solid 1px black;
-  transition: background-color 0.3s, color 0.3s;
-  text-decoration: none;
-  color: black;
-  padding: 0.5em 0.6em 0.5em 0.6em;
-}
-
-.heroBtn:hover{
-  cursor: pointer;
-  border: solid 1px black;
-  background-color: black;
-  color: white;
-}
 
 @media screen and (max-width: 480px) {
   .navUL {
     display: none; 
-  }
-
-  .heroBtn{
-    margin-top: 2.5em;
-    display: block;
-  }
-}
-
-@media only screen and (orientation: landscape) {
-  .navUL{
-   display: none;
-  }
-  .heroBtn{
-    margin-top: 2.5em;
-    display: block;
   }
 }
 
@@ -135,9 +101,15 @@
     .navUL{
       display: none;
      }
-     .heroBtn{
-       margin-top: 2.5em;
-       display: block;
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-device-pixel-ratio: 1) {
+    .navUL{
+      display: none;
      }
 }
 
@@ -150,10 +122,6 @@
     .navUL{
       display: none;
      }
-     .heroBtn{
-       margin-top: 2.5em;
-       display: block;
-     }
 }
 
 /* Styles for iPad Pro 10.5 in portrait */
@@ -164,10 +132,6 @@
   and (-webkit-device-pixel-ratio: 2) {
     .navUL{
       display: none;
-     }
-     .heroBtn{
-       margin-top: 2.5em;
-       display: block;
      }
 }
 
@@ -180,10 +144,6 @@
     .navUL{
       display: none;
      }
-     .heroBtn{
-       margin-top: 2.5em;
-       display: block;
-     }
 }
 
 /* Styles for iPad Pro 12.9 in portrait */
@@ -194,9 +154,5 @@
   and (-webkit-device-pixel-ratio: 2) {
     .navUL{
       display: none;
-     }
-     .heroBtn{
-       margin-top: 2.5em;
-       display: block;
      }
 }
