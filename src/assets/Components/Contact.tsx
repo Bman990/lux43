@@ -56,7 +56,7 @@ export const Contact: React.FC = () => {
       <div className="contactContent">
 
         <div className='backHomeDiv'>
-          <Link to='/lux43/' className='linkStyle3'><ArrowLeftSvg /><p className='backHomeText'>Back home</p></Link>
+          <Link to='/' className='linkStyle3'><ArrowLeftSvg /><p className='backHomeText'>Back home</p></Link>
         </div>
 
         <div className='pictureHeader'>

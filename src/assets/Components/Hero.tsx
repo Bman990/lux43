@@ -1,5 +1,6 @@
 import '../StyleSheets/Hero.css';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 export const Hero: React.FC = () => {
   const containerVariants = {
@@ -36,6 +37,8 @@ export const Hero: React.FC = () => {
           >
             Transforming Spaces, Creating Homes
           </motion.p>
+
+          <Link to='contact' className='heroBtn'>Contact Us</Link>
         </motion.div>
       </div>
     </section>

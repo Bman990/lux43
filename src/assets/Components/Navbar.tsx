@@ -1,51 +1,8 @@
-// import React, { useEffect, useState } from 'react';
-// import '../StyleSheets/Navbar.css';
-// import { Link } from 'react-router-dom';
-
-// export const Navbar: React.FC = () => {
-//   const [showBackground, setShowBackground] = useState(false);
-
-//   useEffect(() => {
-//     const handleScroll = () => {
-//       const scrollY = window.scrollY;
-//       const scrollThreshold = 50;
-
-//       setShowBackground(scrollY > scrollThreshold);
-//     };
-
-//     window.addEventListener('scroll', handleScroll);
-
-//     return () => {
-//       window.removeEventListener('scroll', handleScroll);
-//     };
-//   }, []);
-
-//   return (
-//     <nav className={`navBarContainer ${showBackground ? 'showBackground' : ''}`}>
-//       <div className={`companyDiv ${showBackground ? 'centerCompany' : ''}`}>
-//         <button className='companyBtn'>Lux 43</button>
-//       </div>
-
-//       <ul className={`navUL ${showBackground ? 'showList' : ''}`}>
-//         <li>
-//           <button className="liBtn">About Us</button>
-//         </li>
-//         <li>
-//           <button className="liBtn">Projects</button>
-//         </li>
-//         <li>
-//           <Link to='/lux43/contact' className="liBtn">Contact Us</Link>
-//         </li>
-//       </ul>
-//     </nav>
-//   );
-// };
-
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import '../StyleSheets/Navbar.css';
 import { Link } from 'react-router-dom';
 
-export const Navbar: React.FC = () => {
+export const CustomNavbar: React.FC = () => {
   const [showBackground, setShowBackground] = useState(false);
 
   useEffect(() => {
@@ -93,7 +50,7 @@ export const Navbar: React.FC = () => {
           </button>
         </li>
         <li>
-          <Link to='/lux43/contact' className='liBtn'>Contact Us</Link>
+          <Link to='contact' className='liBtn'>Contact Us</Link>
         </li>
       </ul>
     </nav>
