@@ -6,9 +6,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   padding: 10px;
-  background-color: transparent; /* Initial background color is transparent */
+  background-color: transparent; 
   z-index: 1000;
   transition: transform 0.3s ease, background-color 0.3s ease; /* Add background-color transition */
 }
@@ -50,7 +50,8 @@
 }
 
 .navUL {
-  width: 15%;
+  background-color: aqua;
+  width: 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -91,63 +92,4 @@
   .navUL {
     display: none; 
   }
-}
-
-/* Styles for iPad Mini in portrait */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait)  {
-    .navUL{
-      display: none;
-     }
-}
-
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait)  {
-    .navUL{
-      display: none;
-     }
-}
-
-/* Styles for iPad Air in portrait */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait)  {
-    .navUL{
-      display: none;
-     }
-}
-
-/* Styles for iPad Pro 10.5 in portrait */
-@media only screen 
-  and (min-device-width: 834px) 
-  and (max-device-width: 1112px) 
-  and (orientation: portrait)  {
-    .navUL{
-      display: none;
-     }
-}
-
-/* Styles for iPad Pro 11 in portrait */
-@media only screen 
-  and (min-device-width: 834px) 
-  and (max-device-width: 1194px) 
-  and (orientation: portrait) {
-    .navUL{
-      display: none;
-     }
-}
-
-/* Styles for iPad Pro 12.9 in portrait */
-@media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1366px) 
-  and (orientation: portrait)  {
-    .navUL{
-      display: none;
-     }
 }

@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import '../StyleSheets/Navbar.css';
-import { Link } from 'react-router-dom';
 
 export const CustomNavbar: React.FC = () => {
   const [showBackground, setShowBackground] = useState(false);
@@ -48,9 +47,6 @@ export const CustomNavbar: React.FC = () => {
           <button className="liBtn" onClick={() => scrollToSection('projects')}>
             Projects
           </button>
-        </li>
-        <li>
-          <Link to='contact' className='liBtn'>Contact Us</Link>
         </li>
       </ul>
     </nav>
