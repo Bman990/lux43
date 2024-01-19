@@ -115,3 +115,88 @@
     display: block;
   }
 }
+
+@media only screen and (orientation: landscape) {
+  .navUL{
+   display: none;
+  }
+  .heroBtn{
+    margin-top: 2.5em;
+    display: block;
+  }
+}
+
+/* Styles for iPad Mini in portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-device-pixel-ratio: 1) {
+    .navUL{
+      display: none;
+     }
+     .heroBtn{
+       margin-top: 2.5em;
+       display: block;
+     }
+}
+
+/* Styles for iPad Air in portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-device-pixel-ratio: 2) {
+    .navUL{
+      display: none;
+     }
+     .heroBtn{
+       margin-top: 2.5em;
+       display: block;
+     }
+}
+
+/* Styles for iPad Pro 10.5 in portrait */
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 1112px) 
+  and (orientation: portrait) 
+  and (-webkit-device-pixel-ratio: 2) {
+    .navUL{
+      display: none;
+     }
+     .heroBtn{
+       margin-top: 2.5em;
+       display: block;
+     }
+}
+
+/* Styles for iPad Pro 11 in portrait */
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 1194px) 
+  and (orientation: portrait) 
+  and (-webkit-device-pixel-ratio: 2) {
+    .navUL{
+      display: none;
+     }
+     .heroBtn{
+       margin-top: 2.5em;
+       display: block;
+     }
+}
+
+/* Styles for iPad Pro 12.9 in portrait */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (orientation: portrait) 
+  and (-webkit-device-pixel-ratio: 2) {
+    .navUL{
+      display: none;
+     }
+     .heroBtn{
+       margin-top: 2.5em;
+       display: block;
+     }
+}
